@@ -1,4 +1,4 @@
-const labourSchema = new mongoose.Schema({
+const employeeSchema = new mongoose.Schema({
      name: String,
      assignedManager: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
      inTime: Date,
@@ -6,4 +6,4 @@ const labourSchema = new mongoose.Schema({
      tasks: [String],
 });
 
-module.exports = mongoose.model('Labour', labourSchema);
+module.exports = mongoose.model('Employee', employeeSchema);
